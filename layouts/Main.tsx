@@ -1,3 +1,4 @@
+import Navbar from "@/component/header";
 import Head from "next/head";
 
 type LayoutType = {
@@ -11,6 +12,7 @@ const LayoutMain = ({children, title = 'Trung anh title'}: LayoutType) => {
           <Head>
             <title>{ title }</title>
           </Head>
+          <Navbar />
           <main>
             {children}
           </main>

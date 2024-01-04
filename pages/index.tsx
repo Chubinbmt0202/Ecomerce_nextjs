@@ -4,7 +4,9 @@ import LayoutMain from "@/layouts/Main";
 export default function Home() {
   return (
     <LayoutMain>
-      <Navbar/>
+      <h1>
+        This is shop page
+      </h1>
     </LayoutMain>
   );
 }

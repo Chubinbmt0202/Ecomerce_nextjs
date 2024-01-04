@@ -17,6 +17,7 @@ import {
 } from "@heroicons/react/24/outline";
 import {
   ChevronDownIcon,
+  ShoppingBagIcon
 } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import Link from "next/link";
@@ -108,6 +109,27 @@ export default function Navbar() {
           <Link href={"/cart"}>
             {" "}
           </Link>
+          <div
+      className="z-50 relative inline-block group w-7"
+    >
+      <ShoppingBagIcon className="w-5 h-5" />
+        <span className="absolute top-0 left-3 bg-red-500 text-white px-1 rounded-full text-xs">
+          1
+        </span>
+      {/* {((contextCartCount > 0) && isHovered) && (
+        <div className="absolute z-50 bg-white right-0 border border-gray-300 p-2 pl-3 space-y-2 group-hover:inline transition-all duration-300 ease-in-out">
+          <div className="w-72">
+            <p className="text-xs">Sản phẩm mới thêm:</p>
+            {recentlyAddedProducts.map((product, index) => (
+              <div key={index} className="flex">
+                <p className="pl-1 mt-2">{product.name}</p>
+                <p className="pl-1 mt-2">{product.price}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )} */}
+    </div>
 
           <Link
             href="/login"
