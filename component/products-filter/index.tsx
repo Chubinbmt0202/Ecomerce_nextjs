@@ -20,7 +20,7 @@ const handleColorChange = (selectedColor: string) => {
 const ProductFilter = () => {
   const [selectedColor, setSelectedColor] = useState(productsColors[0]);
   return (
-    <form className=" p-8 hidden lg:block sticky top-24 z-500">
+    <form className=" row-span-3 p-8 hidden lg:block sticky top-24 z-500">
       <h3 className=" text-lg font-bold pb-4 border-b border-gray-300 py-2">
         Các danh mục sản phẩm
       </h3>
