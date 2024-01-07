@@ -7,6 +7,7 @@ import {
 import ProductSort from "@/utils/data-products/product-sort";
 import { useState } from "react";
 import { Fragment } from "react";
+import ListProduct from "./list";
 
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(" ");
@@ -114,8 +115,7 @@ const ProductContent = () => {
           </div>
         </form>
       </div>
-      hiển thị danh sách sản phẩm
-      {/* <List /> */}
+      <ListProduct />
     </section>
   );
 };
