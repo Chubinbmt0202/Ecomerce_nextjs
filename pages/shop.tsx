@@ -6,8 +6,7 @@ import LayoutMain from "@/layouts/Main";
 const Shop = () => {
   return (
     <LayoutMain>
-      <Breakcrumb />
-      <div className=" max-w-7xl m-auto flex pt-5 ">
+      <div className=" max-w-7xl m-auto flex pt-24">
         <div className=" w-[25%]">
           <ProductFilter />
         </div>
