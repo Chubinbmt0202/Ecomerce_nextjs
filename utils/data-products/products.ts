@@ -10,8 +10,9 @@ export const products = [
     category: "T-shirt",
     currentPrice: 89.99,
     sizes: ["xl", "l"],
+    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
-    images: ['/images/Tshirt1.png'],
+    images: ['/images/Tshirt1.png', '/images/Tshirt1.png'],
     punctuation: {
       countOpinions: 81,
       punctuation: 4.5,
@@ -70,6 +71,7 @@ export const products = [
     category: "T-shirt",
     currentPrice: 89.99,
     sizes: ["xl", "l"],
+    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
     images: ['/images/Tshirt1.png'],
     punctuation: {
@@ -130,6 +132,7 @@ export const products = [
     category: "T-shirt",
     currentPrice: 89.99,
     sizes: ["xl", "l"],
+    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
     images: ['/images/Tshirt1.png'],
     punctuation: {
@@ -190,6 +193,7 @@ export const products = [
     category: "T-shirt",
     currentPrice: 89.99,
     sizes: ["xl", "l"],
+    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
     images: ['/images/Tshirt1.png'],
     punctuation: {
@@ -250,6 +254,7 @@ export const products = [
     category: "T-shirt",
     currentPrice: 89.99,
     sizes: ["xl", "l"],
+    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
     images: ['/images/Tshirt1.png'],
     punctuation: {
@@ -311,6 +316,7 @@ export const products = [
     category: "T-shirt",
     currentPrice: 89.99,
     sizes: ["xl", "l"],
+    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
     images: ['/images/Tshirt1.png'],
     punctuation: {
@@ -371,6 +377,7 @@ export const products = [
     category: "T-shirt",
     currentPrice: 89.99,
     sizes: ["xl", "l"],
+    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
     images: ['/images/Tshirt1.png'],
     punctuation: {
@@ -431,6 +438,7 @@ export const products = [
     category: "T-shirt",
     currentPrice: 89.99,
     sizes: ["xl", "l"],
+    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
     images: ['/images/Tshirt1.png'],
     punctuation: {
@@ -491,6 +499,7 @@ export const products = [
     category: "T-shirt",
     currentPrice: 89.99,
     sizes: ["xl", "l"],
+    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
     images: ['/images/Tshirt1.png'],
     punctuation: {
@@ -551,6 +560,7 @@ export const products = [
     category: "T-shirt",
     currentPrice: 89.99,
     sizes: ["xl", "l"],
+    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
     images: ['/images/Tshirt1.png'],
     punctuation: {
@@ -612,6 +622,7 @@ export const products = [
     category: "T-shirt",
     currentPrice: 89.99,
     sizes: ["xl", "l"],
+    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
     images: ['/images/Tshirt1.png'],
     punctuation: {

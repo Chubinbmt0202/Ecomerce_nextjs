@@ -17,10 +17,12 @@ export type ReviewType = {
 export type ProductType = {
   id: string;
   name: string;
+  category: string;
   thumb: string;
   price: string;
   count: number;
   color: string;
+  descriptions: string;
   size: string;
   images: string[];
   discount?: string;

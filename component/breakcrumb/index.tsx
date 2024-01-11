@@ -1,4 +1,8 @@
-const Breakcrumb = () => {
+type productName = {
+  name: string
+}
+
+const Breakcrumb = ({name}: productName) => {
     return (
         <nav aria-label="Breadcrumb">
         <ol
@@ -8,10 +12,10 @@ const Breakcrumb = () => {
           <li>
             <div className="flex items-center">
               <a
-                href={"/shop"}
+                href={"/"}
                 className="mr-2 text-sm font-medium text-gray-900"
               >
-                shop
+                Home
               </a>
               <svg
                 width={16}
@@ -27,11 +31,11 @@ const Breakcrumb = () => {
           </li>
           <li className="text-sm">
             <a
-              href="/"
+              href="/shop"
               aria-current="page"
               className="font-medium text-gray-500 hover:text-gray-600"
             >
-              shop
+              Shop
             </a>
           </li>
           <li>
@@ -47,7 +51,7 @@ const Breakcrumb = () => {
                 <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
               </svg>
               <a href={""} className="mr-2 text-sm font-medium text-gray-900">
-                Sản phẩm 1
+                {name}
               </a>
             </div>
           </li>
