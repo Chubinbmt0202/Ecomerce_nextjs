@@ -1,10 +1,34 @@
-import { ProductType } from "@/types";
+import { addProduct } from "@/store/reducers/cart";
+import { ProductStoreType, ProductType } from "@/types";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
 
 type productContent = {
   product: ProductType;
 };
 
 const Content = ({product}: productContent) => {
+  const [count, setCount] = useState<number>(1);
+  const dispatch = useDispatch();
+
+  const AddToCart = () => {
+    const productToSave: ProductStoreType = {
+      id: product.id,
+      name: product.name,
+      thumb: product.images ? product.images[0] : '',
+      price: product.currentPrice,
+      count: count,
+      color: "",
+      size: ""
+    }
+    const productStore = {
+      count,
+      product: productToSave
+    }
+
+    dispatch(addProduct(productStore));
+  }
+
   return (
     <section>
       <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">
@@ -114,7 +138,7 @@ const Content = ({product}: productContent) => {
         </div>
       </div>
       <div className="">
-        <button className=" ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">
+        <button onClick={() => AddToCart()} className=" ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">
           Thêm vào giỏ hàng
         </button>
         <button className=" ml-3 text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">

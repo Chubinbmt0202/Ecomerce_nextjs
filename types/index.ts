@@ -39,3 +39,13 @@ export type ProductTypeList = {
   discount?: string;
   currentPrice?: number;
 }
+
+export type ProductStoreType = {
+  id: string,
+  name: string,
+  thumb: string,
+  price : number,
+  count: number,
+  color: string,
+  size: string
+}
