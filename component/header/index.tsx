@@ -56,7 +56,7 @@ function classNames(...classes: string[]) {
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { cartItems } = useSelector((state: RootState)  => state.cart);
+  const { cartItems } = useSelector((state: RootState) => state.cart);
 
   return (
     <header className="bg-white fixed z-10 w-[-webkit-fill-available] shadow-sm ">
@@ -105,15 +105,17 @@ export default function Navbar() {
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href={"/cart"}> </Link>
-          <div className="z-50 relative inline-block group w-7">
-            <ShoppingBagIcon className="w-5 h-5" />
-            <span className="absolute top-0 left-3 bg-red-500 text-white px-1 rounded-full text-xs">
-            {cartItems.length > 0 && 
-                <span className="btn-cart__count">{cartItems.length}</span>
-              }
-            </span>
-          </div>
+          <Link href={"/cart"}>
+            <div className="z-50 relative inline-block group w-7">
+              <ShoppingBagIcon className="w-5 h-5" />
+              <span className="absolute top-0 left-3 bg-red-500 text-white px-1 rounded-full text-xs">
+                {cartItems.length > 0 && (
+                  <span className="btn-cart__count">{cartItems.length}</span>
+                )}
+              </span>
+            </div>
+          </Link>
+
           <Link
             href="/login"
             className="text-sm font-semibold leading-6 ml-3 text-gray-900"
