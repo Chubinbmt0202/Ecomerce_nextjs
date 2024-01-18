@@ -5,6 +5,16 @@ import ItemProductCart from "./items";
 
 const ShoppingCart = () => {
   const { cartItems } = useSelector((state: RootState) => state.cart);
+
+  const priceTotal = () => {
+    let totalPrice = 0;
+
+    if (cartItems.length > 0) {
+      cartItems.map(item => totalPrice += item.price * item.count)
+    }
+    return totalPrice
+  }
+
   return (
     <section className="  max-w-7xl m-auto pt-20">
       <div className="">
@@ -34,9 +44,6 @@ const ShoppingCart = () => {
                   <th className="font-semibold text-center text-gray-600 text-xs uppercase w-[20%]">
                     Đơn giá
                   </th>
-                  <th className="font-semibold text-center text-gray-600 text-xs uppercase w-[20%]">
-                    Tổng tiền
-                  </th>
                   <th className="font-semibold text-center text-gray-600 text-xs uppercase w-[4%]">
 
                   </th>
@@ -50,7 +57,7 @@ const ShoppingCart = () => {
                     name={item.name}
                     color={item.color}
                     price={item.price}
-                    count={0}
+                    count={item.count}
                     size={""}
                   />
                 ))}
@@ -82,7 +89,7 @@ const ShoppingCart = () => {
               className=" border border-stone-500 border-1 rounded-full p-1"
             />
             <p className=" ml-4">
-              Total cost <strong>$123</strong>
+              Total cost <strong>${priceTotal().toFixed(2)}</strong>
             </p>
             <a
               href="/cart/checkout"

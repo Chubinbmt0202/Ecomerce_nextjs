@@ -1,54 +1,59 @@
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { ProductStoreType } from '@/types';
 
-import { ProductStoreType } from "@/types";
-import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-
-// Định nghĩa kiểu trạng thái giỏ hàng
 interface CartTypes {
-    cartItems: ProductStoreType[]
+  cartItems: ProductStoreType[]
 }
 
-// Khởi tạo trạng thái ban đầu của giỏ hàng
-const initialState = {
-    cartItems: []
-} as CartTypes
+const initialState = { 
+  cartItems: [] 
+} as CartTypes;
 
-// Hàm kiểm tra xem một sản phẩm có giống với sản phẩm khác không
 const indexSameProduct = (state: CartTypes, action: ProductStoreType) => {
-    const sameProduct = (product: ProductStoreType) => (
-      product.id === action.id
-    );
-  
-    // Trả về chỉ số của sản phẩm trong mảng hoặc -1 nếu không tìm thấy
-    return state.cartItems.findIndex(sameProduct);
-  };
-// Định nghĩa kiểu dữ liệu có action thêm sản phẩm
+  const sameProduct = (product: ProductStoreType) => (
+    product.id === action.id 
+  );
+
+  return state.cartItems.findIndex(sameProduct)
+};
+
 type AddProductType = {
-    product: ProductStoreType;
-    count: number;
+  product: ProductStoreType,
+  count: number,
 }
 
-// Tạo slice giỏ hàng sử dụng createSlice
 const cartSlice = createSlice({
-    name: 'cart',
-    initialState,
-    reducers: {
-        // Action thêm sản phẩm vào giỏ hàng
-        addProduct: (state, action: PayloadAction<AddProductType>) => {
-            const cartItems = state
-            return {
-                ...state,
-                cartItems: [...state.cartItems, action.payload.product]
-            }
-        },
+  name: 'cart',
+  initialState,
+  reducers: {
+    addProduct: (state, action: PayloadAction<AddProductType>) => {
+      const cartItems = state.cartItems;
+      
 
-        setCount(state, action:PayloadAction<AddProductType>) {
-            // Tìm chỉ số của sản phẩm trong mảng và cập nhật số lượng
-            const indexItem = indexSameProduct(state, action.payload.product)
-            state.cartItems[indexItem].count = action.payload.count
-        }
-    }
+      // find index of product
+      const index = indexSameProduct(state, action.payload.product);
+
+      if(index !== -1) {
+        cartItems[index].count += action.payload.count;
+        return;
+      }
+
+      return {
+        ...state,
+        cartItems: [...state.cartItems, action.payload.product ],
+      };
+    },
+    removeProduct(state, action: PayloadAction<ProductStoreType>) {
+      // find index of product
+      state.cartItems.splice(indexSameProduct(state, action.payload), 1);
+    },
+    setCount(state, action: PayloadAction<AddProductType>) {
+      // find index and add new count on product count
+      const indexItem = indexSameProduct(state, action.payload.product);
+      state.cartItems[indexItem].count = action.payload.count;
+    },
+  },
 })
 
-// Xuất các action creators và reducer từ slice giỏ hàng
-export const {addProduct, setCount} = cartSlice.actions
-export default cartSlice.reducer;
+export const { addProduct, removeProduct, setCount } = cartSlice.actions
+export default cartSlice.reducer
