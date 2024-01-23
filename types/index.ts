@@ -49,3 +49,13 @@ export type ProductStoreType = {
   color: string,
   size: string
 }
+
+export type UserType = {
+  id: string,
+  name: string,
+}
+
+export type LoginType = {
+  email: string,
+  password: string
+}

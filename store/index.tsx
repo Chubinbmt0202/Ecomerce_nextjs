@@ -4,14 +4,17 @@ import storage from 'redux-persist/lib/storage';
 import { persistReducer, persistStore } from 'redux-persist';
 import { createWrapper } from 'next-redux-wrapper';
 import cartReducer from './reducers/cart';
+import userReducer from './reducers/user'
 
 const reducer = {
   cart: cartReducer,
+  user: userReducer
 };
 
 // Combine reducers into a root reducer
 const rootReducer = combineReducers({
   cart: cartReducer,
+  user: userReducer,
 });
 
 let store = configureStore({
@@ -23,7 +26,7 @@ const makeStore = ({ isServer }: { isServer: boolean }) => {
     return store;
   } else {
     const persistConfig = {
-      key: "shoppingcart",
+      key: "trunganh",
       whitelist: ["cart", "user"],
       storage,
     };
