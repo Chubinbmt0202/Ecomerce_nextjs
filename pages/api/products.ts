@@ -10,5 +10,5 @@ console.log("Gọi api dữ liệu: ", products);
 
   setTimeout(() => {
     res.status(200).json(products);
-  }, 800);
+  }, 9900);
 }

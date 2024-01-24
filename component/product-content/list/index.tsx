@@ -2,6 +2,7 @@ import useSwr from 'swr';
 import ProductItem from '@/component/product-items';
 // import ProductsLoading from './loading';
 import { ProductTypeList } from '@/types';
+import ProductsLoading from './Loading';
 
 const ListProduct = () => {
   const fetcher = (url: string) => fetch(url).then((res) => res.json());
@@ -11,7 +12,7 @@ const ListProduct = () => {
   return (
     <>
       {!data && 
-        <h1>HEHEHEHEHE</h1>
+        <ProductsLoading />
       }
 
       {data &&
