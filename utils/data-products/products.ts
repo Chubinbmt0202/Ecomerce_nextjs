@@ -3,16 +3,16 @@ import image1 from '../../public/images/Tshirt1.png'
 export const products = [
   {
     id: "1",
-    name: "T-Shirt Summer Vibes",
+    name: "Nike Sportswear 'LNY' ",
     price: 119.99,
     discount: 30,
     quantityAvailable: 2,
     category: "T-shirt",
-    currentPrice: 89.99,
+    currentPrice: 659.000,
     sizes: ["xl", "l"],
-    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
+    descriptions: "Awaken your inner dragon in an everyday classic—a soft tee made from 100% cotton.",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
-    images: ['/images/Tshirt1.png', '/images/Tshirt1.png'],
+    images: ['/images/1/Tshirt1.png'],
     punctuation: {
       countOpinions: 81,
       punctuation: 4.5,
@@ -39,41 +39,19 @@ export const products = [
         },
       ],
     },
-    reviews: [
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 2,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 4,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 5,
-      },
-    ],
   },
   {
     id: "2",
-    name: "T-Shirt Summer Vibes",
-    price: 119.99,
+    name: "Skate T-shirt Plus",
+    price: 534.000,
+    discount: 23,
     quantityAvailable: 2,
     category: "T-shirt",
-    currentPrice: 89.99,
+    currentPrice: 659.000,
     sizes: ["xl", "l"],
-    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
+    descriptions: "Awaken your inner dragon in an everyday classic—a soft tee made from 100% cotton.",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
-    images: ['/images/Tshirt1.png'],
+    images: ['/images/2/Tshirt2.png', '/images/2/Tshirt2_1.png', '/images/2/Tshirt2_2.png', '/images/2/Tshirt2_3.png', '/images/2/Tshirt2_4.png', '/images/2/Tshirt2_5.png'],
     punctuation: {
       countOpinions: 81,
       punctuation: 4.5,
@@ -100,41 +78,19 @@ export const products = [
         },
       ],
     },
-    reviews: [
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 2,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 4,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 5,
-      },
-    ],
   },
   {
     id: "3",
-    name: "T-Shirt Summer Vibes",
-    price: 119.99,
+    name: "Nike SB White",
+    price: 534.000,
+    discount: 23,
     quantityAvailable: 2,
     category: "T-shirt",
-    currentPrice: 89.99,
+    currentPrice: 659.000,
     sizes: ["xl", "l"],
-    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
+    descriptions: "Awaken your inner dragon in an everyday classic—a soft tee made from 100% cotton.",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
-    images: ['/images/Tshirt1.png'],
+    images: ['/images/3/Tshirt3.png', '/images/3/Tshirt3_1.png', '/images/3/Tshirt3_2.png', '/images/3/Tshirt3_3.png', '/images/3/Tshirt3_4.png', '/images/3/Tshirt3_5.png', '/images/3/Tshirt3_6.png'],
     punctuation: {
       countOpinions: 81,
       punctuation: 4.5,
@@ -161,41 +117,19 @@ export const products = [
         },
       ],
     },
-    reviews: [
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 2,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 4,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 5,
-      },
-    ],
   },
   {
     id: "4",
-    name: "T-Shirt Summer Vibes",
-    price: 119.99,
+    name: "Nike SB Black",
+    price: 234.000,
+    discount: 23,
     quantityAvailable: 2,
     category: "T-shirt",
-    currentPrice: 89.99,
+    currentPrice: 659.000,
     sizes: ["xl", "l"],
-    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
+    descriptions: "Awaken your inner dragon in an everyday classic—a soft tee made from 100% cotton.",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
-    images: ['/images/Tshirt1.png'],
+    images: ['/images/4/Tshirt4.png', '/images/4/Tshirt4_1.png', '/images/4/Tshirt4_2.png', '/images/4/Tshirt4_3.png', '/images/4/Tshirt4_4.png'],
     punctuation: {
       countOpinions: 81,
       punctuation: 4.5,
@@ -222,44 +156,22 @@ export const products = [
         },
       ],
     },
-    reviews: [
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 2,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 4,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 5,
-      },
-    ],
   },
   {
     id: "5",
-    name: "T-Shirt Summer Vibes",
-    price: 119.99,
+    name: "Nike SB Green Pro",
+    price: 565.000,
+    discount: 23,
     quantityAvailable: 2,
     category: "T-shirt",
-    currentPrice: 89.99,
+    currentPrice: 659.000,
     sizes: ["xl", "l"],
-    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
+    descriptions: "Awaken your inner dragon in an everyday classic—a soft tee made from 100% cotton.",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
-    images: ['/images/Tshirt1.png'],
+    images: ['/images/5/Tshirt5.png', '/images/5/Tshirt5_1.png', '/images/5/Tshirt5_2.png', '/images/5/Tshirt5_3.png', '/images/5/Tshirt5_5.png'],
     punctuation: {
       countOpinions: 81,
-      punctuation: 4.5,
+      punctuation: 5.5,
       votes: [
         {
           value: 1,
@@ -283,45 +195,22 @@ export const products = [
         },
       ],
     },
-    reviews: [
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 2,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 4,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 5,
-      },
-    ],
   },
   {
     id: "6",
-    name: "T-Shirt Summer Vibes",
-    price: 119.99,
-    discount: 30,
+    name: "Jordan Flight MVP 85",
+    price: 850.000,
+    discount: 23,
     quantityAvailable: 2,
     category: "T-shirt",
-    currentPrice: 89.99,
+    currentPrice: 659.000,
     sizes: ["xl", "l"],
-    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
+    descriptions: "Awaken your inner dragon in an everyday classic—a soft tee made from 100% cotton.",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
-    images: ['/images/Tshirt1.png'],
+    images: ['/images/Tshirt6.png'],
     punctuation: {
       countOpinions: 81,
-      punctuation: 4.5,
+      punctuation: 5.5,
       votes: [
         {
           value: 1,
@@ -345,44 +234,22 @@ export const products = [
         },
       ],
     },
-    reviews: [
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 2,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 4,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 5,
-      },
-    ],
   },
   {
     id: "7",
-    name: "T-Shirt Summer Vibes",
-    price: 119.99,
+    name: "Jordan Brand Shirt",
+    price: 345.000,
+    discount: 23,
     quantityAvailable: 2,
     category: "T-shirt",
-    currentPrice: 89.99,
+    currentPrice: 659.000,
     sizes: ["xl", "l"],
-    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
+    descriptions: "Awaken your inner dragon in an everyday classic—a soft tee made from 100% cotton.",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
-    images: ['/images/Tshirt1.png'],
+    images: ['/images/Tshirt7.png'],
     punctuation: {
       countOpinions: 81,
-      punctuation: 4.5,
+      punctuation: 5.5,
       votes: [
         {
           value: 1,
@@ -406,44 +273,22 @@ export const products = [
         },
       ],
     },
-    reviews: [
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 2,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 4,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 5,
-      },
-    ],
   },
   {
     id: "8",
-    name: "T-Shirt Summer Vibes",
-    price: 119.99,
+    name: "Nike Sportswear Club ",
+    price: 675.000,
+    discount: 23,
     quantityAvailable: 2,
     category: "T-shirt",
-    currentPrice: 89.99,
+    currentPrice: 659.000,
     sizes: ["xl", "l"],
-    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
+    descriptions: "Awaken your inner dragon in an everyday classic—a soft tee made from 100% cotton.",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
-    images: ['/images/Tshirt1.png'],
+    images: ['/images/Tshirt8.png'],
     punctuation: {
       countOpinions: 81,
-      punctuation: 4.5,
+      punctuation: 5.5,
       votes: [
         {
           value: 1,
@@ -467,44 +312,22 @@ export const products = [
         },
       ],
     },
-    reviews: [
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 2,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 4,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 5,
-      },
-    ],
-  },
+  },  
   {
     id: "9",
-    name: "T-Shirt Summer Vibes",
-    price: 119.99,
+    name: "Jordan Air Club ",
+    price: 234,
+    discount: 23,
     quantityAvailable: 2,
     category: "T-shirt",
-    currentPrice: 89.99,
+    currentPrice: 659.000,
     sizes: ["xl", "l"],
-    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
+    descriptions: "Awaken your inner dragon in an everyday classic—a soft tee made from 100% cotton.",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
-    images: ['/images/Tshirt1.png'],
+    images: ['/images/Tshirt9.png'],
     punctuation: {
       countOpinions: 81,
-      punctuation: 4.5,
+      punctuation: 5.5,
       votes: [
         {
           value: 1,
@@ -528,44 +351,22 @@ export const products = [
         },
       ],
     },
-    reviews: [
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 2,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 4,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 5,
-      },
-    ],
   },
   {
     id: "10",
-    name: "T-Shirt Summer Vibes",
-    price: 119.99,
+    name: "Nike Expert Space ",
+    price: 919,
+    discount: 23,
     quantityAvailable: 2,
     category: "T-shirt",
-    currentPrice: 89.99,
+    currentPrice: 659.000,
     sizes: ["xl", "l"],
-    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
+    descriptions: "Awaken your inner dragon in an everyday classic—a soft tee made from 100% cotton.",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
-    images: ['/images/Tshirt1.png'],
+    images: ['/images/Tshirt10.png'],
     punctuation: {
       countOpinions: 81,
-      punctuation: 4.5,
+      punctuation: 5.5,
       votes: [
         {
           value: 1,
@@ -589,45 +390,22 @@ export const products = [
         },
       ],
     },
-    reviews: [
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 2,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 4,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 5,
-      },
-    ],
   },
   {
     id: "11",
-    name: "T-Shirt Summer Vibes",
-    price: 119.99,
-    discount: 30,
+    name: "Hoodies Farber Space ",
+    price: 919,
+    discount: 23,
     quantityAvailable: 2,
-    category: "T-shirt",
-    currentPrice: 89.99,
+    category: "Hoodies",
+    currentPrice: 659.000,
     sizes: ["xl", "l"],
-    descriptions: "loremlaksjdhfl aksjdhf laksjdhf laskjdh aoisdy fpao sfpoa sfpoasd fpoa iydpofi uaospid opasui",
+    descriptions: "Awaken your inner dragon in an everyday classic—a soft tee made from 100% cotton.",
     colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
-    images: ['/images/Tshirt1.png'],
+    images: ['/images/Hoodie1.png'],
     punctuation: {
       countOpinions: 81,
-      punctuation: 4.5,
+      punctuation: 5.5,
       votes: [
         {
           value: 1,
@@ -651,29 +429,84 @@ export const products = [
         },
       ],
     },
-    reviews: [
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 2,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 4,
-      },
-      {
-        name: "John Doe",
-        avatar: "/images/featured-1.jpg",
-        description:
-          "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s</p>",
-        punctuation: 5,
-      },
-    ],
+  },
+  {
+    id: "12",
+    name: "Hoodies Jordan Awar ",
+    price: 919,
+    discount: 23,
+    quantityAvailable: 2,
+    category: "Hoodies",
+    currentPrice: 659.000,
+    sizes: ["xl", "l"],
+    descriptions: "Awaken your inner dragon in an everyday classic—a soft tee made from 100% cotton.",
+    colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
+    images: ['/images/Hoodie2.png'],
+    punctuation: {
+      countOpinions: 81,
+      punctuation: 5.5,
+      votes: [
+        {
+          value: 1,
+          count: 1,
+        },
+        {
+          value: 2,
+          count: 10,
+        },
+        {
+          value: 3,
+          count: 10,
+        },
+        {
+          value: 4,
+          count: 20,
+        },
+        {
+          value: 5,
+          count: 40,
+        },
+      ],
+    },
+  },
+  {
+    id: "13",
+    name: "Jordan Essentials",
+    price: 315,
+    discount: 23,
+    quantityAvailable: 2,
+    category: "Hoodies",
+    currentPrice: 659.000,
+    sizes: ["xl", "l"],
+    descriptions: "Awaken your inner dragon in an everyday classic—a soft tee made from 100% cotton.",
+    colors: ["#000", "6F3E18", "#D4BE8D", "#FFF"],
+    images: ['/images/Hoodie3.png'],
+    punctuation: {
+      countOpinions: 81,
+      punctuation: 5.5,
+      votes: [
+        {
+          value: 1,
+          count: 1,
+        },
+        {
+          value: 2,
+          count: 10,
+        },
+        {
+          value: 3,
+          count: 10,
+        },
+        {
+          value: 4,
+          count: 20,
+        },
+        {
+          value: 5,
+          count: 40,
+        },
+      ],
+    },
   },
 ];
 

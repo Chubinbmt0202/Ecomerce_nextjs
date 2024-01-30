@@ -12,13 +12,13 @@ const Gallery = ({ images }: GalleryProductType) => {
       <div className="">
         {images.map((image, index) => (
           <div key={index} className="">
-            <Image width={100} height={60} src={image} alt="List Image" />
+            <Image width={70} height={40} src={image} alt="List Image" className=" mb-3 rounded-lg" />
           </div>
         ))}
       </div>
 
       <div className="">
-        <Image width={500} height={300} src={featImage} alt="Active Image" />
+        <Image width={500} height={300} src={featImage} className="rounded-lg" alt="Active Image" />
       </div>
     </section>
   );

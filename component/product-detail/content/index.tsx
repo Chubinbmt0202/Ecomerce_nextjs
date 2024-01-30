@@ -94,12 +94,12 @@ const Content = ({product}: productContent) => {
           >
             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
           </svg>
-          <span className="text-gray-600 ml-3">{product.reviews.map((item) => item.punctuation)} Reviews | {product.punctuation.countOpinions} Đã bán</span>
+          <span className="text-gray-600 ml-3">{product.punctuation.countOpinions} Đã bán</span>
         </span>
       </div>
       <p className="leading-relaxed">
         <h2 className=" font-semibold">Mô tả sản phẩm :</h2>
-        {product.descriptions}
+        {product.descriptions}  
       </p>
       <div className=" mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
         <div className="flex">

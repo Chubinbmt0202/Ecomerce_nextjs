@@ -1,5 +1,5 @@
 import Link from "next/link";
-import productsTypes from "@/utils/data-products/product-types";
+import products from "@/utils/data-products/products";
 import productsColors from "@/utils/data-products/product-color";
 import CheckboxColor from "./form-builder/checkbox-color";
 import { RadioGroup } from "@headlessui/react";
@@ -14,11 +14,16 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 const handleColorChange = (selectedColor: string) => {
-  // Xử lý khi màu sắc thay đổi
-  console.log(`Selected color: ${selectedColor}`);
+  // Xử lý khi màu sắc thay đổ
 };
+
 const ProductFilter = () => {
   const [selectedColor, setSelectedColor] = useState(productsColors[0]);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const uniqueCategories = Array.from(
+    new Set(products.map((product) => product.category))
+  );
+
   return (
     <form className=" row-span-3 pt-8 pr-8 hidden lg:block sticky top-24 z-500">
       <h3 className=" text-lg font-bold pb-4 border-b border-gray-300 py-2">
@@ -28,12 +33,18 @@ const ProductFilter = () => {
         role="list"
         className="space-y-4 pt-3 pb-6 text-sm font-medium text-gray-900"
       >
-        {productsTypes.map((type) => (
-          <Checkbox key={type.id} label={type.name} name="Product-Type" />
+        {uniqueCategories.map((category) => (
+          <Checkbox
+            key={category}
+            label={category}
+            isActive={selectedCategory === category}
+            onClick={() => console.log(selectedCategory)}
+          />
         ))}
       </ul>
-
-      <h3 className="text-lg font-bold pb-4 border-b border-gray-300 py-2">Chọn màu sắc</h3>
+      <h3 className="text-lg font-bold pb-4 border-b border-gray-300 py-2">
+        Chọn màu sắc
+      </h3>
       <RadioGroup
         value={selectedColor}
         onChange={setSelectedColor}
@@ -68,8 +79,9 @@ const ProductFilter = () => {
         </div>
       </RadioGroup>
 
-      <h3 className="text-lg font-bold pb-4 border-b border-gray-300 py-2 mt-3">Chọn khoảng giá</h3>
-
+      <h3 className="text-lg font-bold pb-4 border-b border-gray-300 py-2 mt-3">
+        Chọn khoảng giá
+      </h3>
     </form>
   );
 };

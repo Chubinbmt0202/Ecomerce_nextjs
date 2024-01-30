@@ -8,12 +8,17 @@ import ProductSort from "@/utils/data-products/product-sort";
 import { useState } from "react";
 import { Fragment } from "react";
 import ListProduct from "./list";
+import products from "@/utils/data-products/products"; 
 
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-const ProductContent = () => {
+interface ProductContentProps {
+  selectedCategories: string | null;
+}
+
+const ProductContent = ({ selectedCategories } : ProductContentProps) => {
   const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
   const [selectedFilter, setSelectedFilter] = useState<number | null>(null);
   const [selected, setSelected] = useState(ProductSort[0]);
@@ -24,11 +29,17 @@ const ProductContent = () => {
   const handleFilterClick = (index: number) => {
     setSelectedFilter(index);
   };
+
+  const countProduct =  () => {
+    products.map(item => item)
+
+  }
+
   return (
     <section className=" pt-8 row-span-2 col-span-2">
       <div className=" font-bold pb-4 text-lg flex items-center justify-between border-b border-gray-300">
         <h3>
-          Men Tops <span>(133)</span>
+          Men Tops <span>({products.length})</span>
         </h3>
         <form className={`products-content__filter`}>
           <div className=" flex text-center items-center">

@@ -19,7 +19,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useSelector } from "react-redux";
 import { RootState } from "@/store";
-import userImage from "../../public/images/Tshirt1.png";
+import userImage from "../../public/images/1/Tshirt1.png";
 import { Fragment } from "react";
 import { useDispatch } from "react-redux";
 import { logout } from "@/store/reducers/user";
@@ -128,15 +128,6 @@ export default function Navbar() {
           </Link>
 
           {isAuthenticated && (
-            // <div className="inline-block h-8 w-8 rounded-full ring-2 ring-white">
-            //   <Image
-            //     height={300}
-            //     width={300}
-            //     className="inline-block h-8 w-8 rounded-full ring-2 ring-white"
-            //     src={userImage}
-            //     alt=""
-            //   />
-            // </div>
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-full bg-white text-sm font-semibold shadow-sm ">
