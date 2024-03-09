@@ -21,7 +21,11 @@ let store = configureStore({
   reducer,
 });
 
-const makeStore = ({ isServer }: { isServer: boolean }) => {
+import { Context } from 'next-redux-wrapper';
+
+const makeStore = (context: Context) => {
+  const isServer = typeof window === 'undefined';
+
   if (isServer) {
     return store;
   } else {
