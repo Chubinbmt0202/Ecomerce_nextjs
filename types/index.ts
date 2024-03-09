@@ -31,6 +31,7 @@ export type ProductType = {
   reviews: ReviewType[];
 };
 export type ProductTypeList = {
+  [x: string]: any;
   id: string;
   name: string;
   price: string;
