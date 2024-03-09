@@ -6,5 +6,5 @@ import products from "@/utils/data-products/products";
 export default (req: NextApiRequest, res: NextApiResponse) => {
   setTimeout(() => {
     res.status(200).json(products);
-  }, 3000);
+  }, 500);
 };

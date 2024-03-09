@@ -20,8 +20,9 @@ try {
       product.category.toLowerCase() === lowercaseCategory
     );
 
-    res.status(200).json(productsByCategory);
-    console.log(res.status(200).json(productsByCategory));
+    setTimeout(() => {
+      res.status(200).json(productsByCategory);
+    }, 500);
     
   } catch (error) {
     console.error("Error: ", error);
