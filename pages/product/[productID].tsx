@@ -44,11 +44,8 @@ const Product = ({ product }: ProductPageType) => {
       <Breakcrumb name={product.name} />
       <section className="text-gray-600 body-font overflow-hidden">
         <div className="container px-5 py-12 mx-auto">
-          <div className=" mx-auto flex justify-between flex-wrap">
-            <Gallery images={product.images} />
-            <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+          <div className="">
               <Content product={product} />
-            </div>
           </div>
         </div>
       </section>
