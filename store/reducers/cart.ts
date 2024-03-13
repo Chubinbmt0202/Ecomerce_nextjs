@@ -43,11 +43,9 @@ const cartSlice = createSlice({
       };
     },
     removeProduct(state, action: PayloadAction<ProductStoreType>) {
-      // find index of product
       state.cartItems.splice(indexSameProduct(state, action.payload), 1);
     },
     setCount(state, action: PayloadAction<AddProductType>) {
-      // find index and add new count on product count
       const indexItem = indexSameProduct(state, action.payload.product);
       state.cartItems[indexItem].count = action.payload.count;
     },

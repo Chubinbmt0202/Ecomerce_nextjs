@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useSelector } from "react-redux";
 import { Table } from "antd";
 import { useDispatch } from "react-redux";
-import { removeProduct } from "@/store/reducers/cart";
+import { removeProduct, setCount } from "@/store/reducers/cart";
 
 const ShoppingCart = () => {
   const dispatch = useDispatch();
@@ -19,6 +19,11 @@ const ShoppingCart = () => {
   console.log(cartItems);
   const handleRemoveProduct = (productKey:any) => {
     dispatch(removeProduct(productKey));
+  };
+  const handleUpdateProductCount = (productKey: number, newCount: number) => {
+    if (newCount >= 0) {
+      dispatch(setCount({ product: cartItems[productKey], count: newCount }));
+    }
   };
   const priceTotal = () => {
     let totalPrice = 0;
@@ -49,6 +54,13 @@ const ShoppingCart = () => {
       title: "Số lượng",
       dataIndex: "count",
       key: "count",
+      render: (count: number, record: any) => (
+        <div>
+          <button onClick={() => handleUpdateProductCount(record.key, count - 1)}>-</button>
+          <input type="number" value={count} onChange={(e) => handleUpdateProductCount(record.key, Number(e.target.value))} />
+          <button onClick={() => handleUpdateProductCount(record.key, count + 1)}>+</button>
+        </div>
+      ),
     },
     {
       title: "Đơn giá",
